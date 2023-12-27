@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for movie in movies %}
+        <h1>Title: {{ movie.title }}</h1>
+        <h1>Author: {{ movie.author }}</h1>
+        <h1>Genre: {{ movie.genre }}</h1>
+        <h1>Year: {{ movie.year }}<h1>
+        <img src="{{ movie.img.url }}" alt="">
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
